@@ -1,0 +1,77 @@
+html {
+    box-sizing: border-box;
+  }
+
+.container {
+width: 97%;
+max-width: 1200px;
+margin: 0 auto;
+float: none;
+background-color: #fff;
+ }
+
+.row {
+	display: flex;
+	flex-flow: row wrap;
+ }
+ 
+ @media only screen and (min-width: 576px) {
+  .col-1 {
+    flex: 0 1 20%;
+    background-color: orangered;
+  }
+  .col-2 {
+    flex: 0 1 44%;
+    background-color: yellowgreen;
+  }
+  .col-3 {
+    flex: 0 1 68%;
+    background-color: blue;
+  }
+  .col-4 {
+    flex: 0 1 92%;
+    background-color: gray;
+  }   
+}
+
+ @media only screen and (min-width: 768px) {
+    .col-1 {
+      flex: 0 1 100%;
+      background-color: orangered;
+      }
+      .col-2  {
+      flex: 0 1 44%;  
+      background-color: yellowgreen; 
+      }
+      .col-3{
+      flex: 0 1 68%;
+      background-color: blue;
+      }
+      .col-4 {
+      flex: 0 1 92%;
+      background-color: gray;
+      }   
+ @media only screen and (min-width: 992px) {
+    .col-1 {
+        flex: 0 1 20%;
+        background-color: orangered;
+      }
+      .col-2  {
+        flex: 0 1 44%;
+        background-color: yellowgreen;
+      }
+      .col-3 {
+        flex: 0 1 68%;
+        background-color: blue;
+      }
+      .col-4 {
+        flex: 0 1 92%;
+        background-color: gray;
+      }   
+}
+
+[class*=col-] {
+	margin-left: 4%;
+  flex: 0 1 92%;
+  height: 50px;
+}
